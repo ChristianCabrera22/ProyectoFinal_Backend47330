@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 
 export default class ProductManager {
   constructor() {
-    this.path = "./products.json" //ruta de mi archivo
+    this.path = "./src/products.json" //ruta de mi archivo
   }
 
   async getProducts() {
@@ -35,7 +35,7 @@ export default class ProductManager {
       if (id) { 
       let archivo = await fs.readFile(this.path,"utf-8")
       let products = JSON.parse(archivo)
-      let product = products.find(prod => prod.id === id)
+      let product = products.find(prod => prod.id === parseInt(id))
       return product ? product : ""
       } else {
         console.log("Error, required ID")
@@ -46,7 +46,7 @@ export default class ProductManager {
       if (id) {
       let archivo = await fs.readFile(this.path,"utf-8")
       let products = JSON.parse(archivo)
-      const index = products.findIndex((product) => product.id === id);
+      const index = products.findIndex((product) => product.id === parseInt(id));
       if (index !== -1) {
         products.splice(index, 1);
         await fs.writeFile(
@@ -69,7 +69,7 @@ export default class ProductManager {
       } else {
       let archivo = await fs.readFile(this.path,"utf-8")
       let products = JSON.parse(archivo)
-      let product = products.find(prod => prod.id === id)
+      let product = products.find(prod => prod.id === parseInt(id))
       if (product) {
         let productsUpdated = products.map((ele)=>{
           if(ele.id==id) {

@@ -61,5 +61,14 @@
     "code": "136",
     "stock": 800,
     "id": 7
+  },
+  {
+    "title": "Sandia",
+    "description": "Bien Roja",
+    "price": 280,
+    "thumbnail": "http://milangadePolloo.jpg",
+    "code": "13634",
+    "stock": 5648974554,
+    "id": 8
   }
 ]
