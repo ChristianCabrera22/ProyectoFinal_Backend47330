@@ -1,4 +1,5 @@
 import { promises as fs } from 'fs';
+import { uuid } from 'uuidv4';
 
 export default class ProductManager {
   constructor() {
@@ -24,7 +25,7 @@ export default class ProductManager {
       if (product) {
           return console.log("invalid code, existing")
       } else {
-          addProduct.id= products.length+1
+          addProduct.id= uuid()
           products.push(addProduct)
           await fs.writeFile(this.path, JSON.stringify(products, null, 2), "utf-8")
           console.log("Product add")
@@ -35,7 +36,7 @@ export default class ProductManager {
       if (id) { 
       let archivo = await fs.readFile(this.path,"utf-8")
       let products = JSON.parse(archivo)
-      let product = products.find(prod => prod.id === parseInt(id))
+      let product = products.find(prod => prod.id === id)
       return product ? product : ""
       } else {
         console.log("Error, required ID")
@@ -46,7 +47,7 @@ export default class ProductManager {
       if (id) {
       let archivo = await fs.readFile(this.path,"utf-8")
       let products = JSON.parse(archivo)
-      const index = products.findIndex((product) => product.id === parseInt(id));
+      const index = products.findIndex((product) => product.id === id);
       if (index !== -1) {
         products.splice(index, 1);
         await fs.writeFile(
@@ -69,7 +70,7 @@ export default class ProductManager {
       } else {
       let archivo = await fs.readFile(this.path,"utf-8")
       let products = JSON.parse(archivo)
-      let product = products.find(prod => prod.id === parseInt(id))
+      let product = products.find(prod => prod.id === id)
       if (product) {
         let productsUpdated = products.map((ele)=>{
           if(ele.id==id) {
