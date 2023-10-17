@@ -1,74 +1,128 @@
 [
   {
-    "title": "Milanesa",
-    "description": "Rebozada de pollo",
+    "title": "Remera",
+    "description": "Manga corta",
     "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "thumbnail": [
+      {
+        "url1": "img-1.jpg",
+        "url2": "img-2.jpg"
+      }
+    ],
     "code": "136",
     "stock": 120,
-    "id": 1
+    "id": "asdasd4-45564-487qw54-421"
   },
   {
-    "title": "Fideos",
+    "title": "Camisa",
     "description": "Tirabuzon",
-    "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "price": 130,
+    "thumbnail": [
+      {
+        "url1": "img-3.jpg",
+        "url2": "img-4.jpg"
+      }
+    ],
     "code": "136",
     "stock": 120,
-    "id": 2
+    "id": "ghjghj-5465df4gd-4df541"
   },
   {
-    "title": "Papa",
+    "title": "Chomba",
     "description": "Blanca lavada",
-    "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "price": 670,
+    "thumbnail": [
+      {
+        "url1": "img-5.jpg",
+        "url2": "img-6.jpg"
+      }
+    ],
     "code": "136",
     "stock": 800,
-    "id": 3
+    "id": "lñmlvcñm-dfgdwe-fdhc45647g"
   },
   {
-    "title": "Cafe",
+    "title": "Remera",
     "description": "Torrado",
-    "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "price": 1456,
+    "thumbnail": [
+      {
+        "url1": "img-7.jpg",
+        "url2": "img-8.jpg"
+      }
+    ],
     "code": "136",
     "stock": 120,
-    "id": 4
+    "id": "asda4564s564s-sd4-513a2s132"
   },
   {
-    "title": "Azucar",
+    "title": "Blaizer",
     "description": "Morena",
-    "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "price": 235,
+    "thumbnail": [
+      {
+        "url1": "img-1.jpg",
+        "url2": "img-2.jpg"
+      }
+    ],
     "code": "136",
     "stock": 120,
-    "id": 5
+    "id": "2a65s4d5a6-4546213v21-s545we"
   },
   {
-    "title": "Pera",
+    "title": "Camisa",
     "description": "Blanca lavada",
-    "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "price": 123,
+    "thumbnail": [
+      {
+        "url1": "img-3.jpg",
+        "url2": "img-4.jpg"
+      }
+    ],
     "code": "136",
     "stock": 800,
-    "id": 6
+    "id": "as1d56as1465a-4a65123w1-74123"
   },
   {
-    "title": "Manzana",
+    "title": "Chomba",
     "description": "Roja",
-    "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "price": 567,
+    "thumbnail": [
+      {
+        "url1": "img-5.jpg",
+        "url2": "img-6.jpg"
+      }
+    ],
     "code": "136",
     "stock": 800,
-    "id": 7
+    "id": "asda32sdds52-121q2w4e-451asdd"
   },
   {
-    "title": "Sandia",
+    "title": "Remera",
     "description": "Bien Roja",
-    "price": 280,
-    "thumbnail": "http://milangadePolloo.jpg",
+    "price": 155,
+    "thumbnail": [
+      {
+        "url1": "img-7.jpg",
+        "url2": "img-8.jpg"
+      }
+    ],
     "code": "13634",
     "stock": 5648974554,
-    "id": 8
+    "id": "125a6sd46as4d-ad4ss56ad156-sa121"
+  },
+  {
+    "title": "TestPostWebsocket",
+    "description": "webSocket",
+    "price": 999,
+    "thumbnail": [
+      {
+        "url1": "img-2.jpg",
+        "url2": "img-3.jpg"
+      }
+    ],
+    "code": "34qwas",
+    "stock": 545,
+    "id": "5a36de1c-ffdd-4b7d-bd6c-bdccde5f3483"
   }
 ]
